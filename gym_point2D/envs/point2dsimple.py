@@ -10,7 +10,7 @@ class Point2DSimpleEnv(gym.Env):
   Custom Environment that follows gym interface.
   """
   # Because of google colab, we cannot implement the GUI ('human' render mode)
-  metadata = {'render.modes': ['console']}
+  metadata = {'render.modes': ['human']}
   # Define constants for clearer code
 
 
