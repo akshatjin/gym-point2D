@@ -16,18 +16,18 @@ class Point2DSimpleEnv(gym.Env):
 
   def __init__(self, maxX = 1.0, maxY = 1.0, grid_size=10):
     super(Point2DSimpleEnv, self).__init__()
-    self.eps = 0.2
-    self.s = 0.1
+    self.eps = 0.3
+    self.s = 0.01
     self.t = 0.01
     # self.minaccX = -10.0
     # self.minaccY = -10.0
     # self.maxaccX = 10.0
     # self.maxaccY = 10.0
 
-    self.minvelX = -10.0
-    self.minvelY = -10.0
-    self.maxvelX = 10.0
-    self.maxvelY = 10.0
+    self.minvelX = -1.0
+    self.minvelY = -1.0
+    self.maxvelX = 1.0
+    self.maxvelY = 1.0
     # Size of the 1D-grid
     # self.grid_size = grid_size
     self.grid_width = maxX
